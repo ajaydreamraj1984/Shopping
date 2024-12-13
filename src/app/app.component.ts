@@ -5,7 +5,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [LayoutComponent],
+  imports: [LayoutComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
