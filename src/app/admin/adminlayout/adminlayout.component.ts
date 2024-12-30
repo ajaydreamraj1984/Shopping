@@ -4,6 +4,7 @@ import { JsloaderService } from '../../jsloader.service';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-adminlayout',
