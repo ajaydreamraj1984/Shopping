@@ -5,9 +5,10 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 import { HomeComponent } from './components/home/home.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ProductsComponent } from './components/products/products.component';
+import { WelcomeComponent } from './admin/welcome/welcome.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 export const routes: Routes = [
-  
    {
     path: '',
     component: LayoutComponent,
@@ -20,7 +21,12 @@ export const routes: Routes = [
     ]
   },
   {
-    path: 'adminlayout',
-    component: AdminlayoutComponent
+    path: 'admin',
+    component: AdminlayoutComponent,
+    children: [
+      { path: '', component: WelcomeComponent },      
+      { path: 'welcome', component: WelcomeComponent }, 
+      { path: 'dashboard', component: DashboardComponent }
+    ]
   },
 ];

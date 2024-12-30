@@ -1,11 +1,15 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CssloaderService } from '../../cssloader.service';
 import { JsloaderService } from '../../jsloader.service';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-adminlayout',
   standalone: true,
-  imports: [],
+  imports: [RouterLink, CommonModule, FormsModule],
   templateUrl: './adminlayout.component.html',
   styleUrls: ['./adminlayout.component.css']
 })
